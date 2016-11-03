@@ -16,6 +16,8 @@
 	<servlet>
 		<servlet-name>spring</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!-- 0은 톰캣 실행될때 1은 첫 init이 일어날때 -->
+		<load-on-startup>0</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
